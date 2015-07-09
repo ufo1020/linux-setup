@@ -1,0 +1,29 @@
+[user]
+	name = Mason Zhang
+	email = mxz@vsl.com.au
+	mnemonic = mxz
+[alias]
+  ci = commit
+  st = status
+  co = checkout
+  br = branch
+  ro = remote
+  pm = pull-master
+[color]
+	ui = true
+[merge]
+ tool = p4merge
+ keepBackup = false
+#	tool = meld
+[mergetool "p4merge"]
+ cmd = /home/developer/tools/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+ keepTemporaries = false
+ trustExitCode = false
+ keepBackup = false
+[diff]
+#  external = /home/mxz/Downloads/p4v-2013.4.770799/bin/p4diff
+#	external = /home/mxz/tools/meld-diff.py
+[credential]
+	helper = cache
+[include]
+  path = /home/developer/Code/Git/Taipan/taipan-slave/Git/Aliases.cfg
